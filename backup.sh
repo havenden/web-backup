@@ -17,7 +17,7 @@ ftp_password=('bakpwd' 'bakpwd' 'bakpwd')
 
 #备份目录
 back_path=$target_path`date +%Y-%m-%d/`
-[ !-d $back_path]&&mkdir -p $back_path
+[ ! -d $back_path ]&&mkdir -p $back_path
 
 #备份配置文件
 function backup_conf(){
